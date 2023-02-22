@@ -28,7 +28,7 @@ public class LCManager: NSObject, UIGestureRecognizerDelegate {
     var isConsoleConfigured = false
     
     /// A high performance text tracker that only updates the view's text if the view is visible. This allows the app to run print to the console with virtually no performance implications when the console isn't visible.
-    var currentText: String = "" {
+    public var currentText: String = "" {
         didSet {
             if isVisible {
                 
